@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace cSharp_SimpleClass
 {
@@ -24,18 +25,13 @@ namespace cSharp_SimpleClass
             numOfAnimals = 0;
         }
 
-        private void BtnAddAnimal_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
-            animals[numOfAnimals] = new Person
-            {
-                Name = TxtName.Text,
-                Age = Convert.ToInt32(TxtAge.Text)
-            };
+            animals[numOfAnimals] = new Person(TxtName.Text, Convert.ToInt32(TxtAge.Text));
             numOfAnimals += 1;
             TxtName.Text = "";
             TxtAge.Text = "";
-            BtnDisplay.PerformClick();
-            
+            BtnDisplay.PerformClick();        
         }
 
         private void BtnDisplay_Click(object sender, EventArgs e)
@@ -52,7 +48,33 @@ namespace cSharp_SimpleClass
 
 public class Person
 {
-    public string Name;
-    public int Age;
-}
+    private string name;
+    private int age;
+    private string city;
 
+ 
+    public string Name 
+    {
+        get { return name; }
+        set {name = value.ToUpper(); }
+    }
+
+    public int Age 
+    {
+        get { return age; }
+        set { age = value; }
+    }
+    public string City
+    {
+        get { return city; }
+        set { city = value.ToUpper(); }
+    }
+
+    public Person(string aName, int aAge)
+    {
+        Name = aName.ToUpper();
+        Age = aAge;
+    }
+
+
+}

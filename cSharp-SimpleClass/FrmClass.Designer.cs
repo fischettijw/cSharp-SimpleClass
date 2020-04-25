@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnAddAnimal = new System.Windows.Forms.Button();
+            this.BtnAdd = new System.Windows.Forms.Button();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.TxtAge = new System.Windows.Forms.TextBox();
             this.BtnDisplay = new System.Windows.Forms.Button();
             this.LbxDisplay = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // BtnAddAnimal
+            // BtnAdd
             // 
-            this.BtnAddAnimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddAnimal.Location = new System.Drawing.Point(49, 58);
-            this.BtnAddAnimal.Name = "BtnAddAnimal";
-            this.BtnAddAnimal.Size = new System.Drawing.Size(161, 44);
-            this.BtnAddAnimal.TabIndex = 0;
-            this.BtnAddAnimal.Text = "Add Animals";
-            this.BtnAddAnimal.UseVisualStyleBackColor = true;
-            this.BtnAddAnimal.Click += new System.EventHandler(this.BtnAddAnimal_Click);
+            this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAdd.Location = new System.Drawing.Point(49, 58);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(161, 44);
+            this.BtnAdd.TabIndex = 0;
+            this.BtnAdd.Text = "Add Person";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // TxtName
             // 
@@ -69,7 +69,7 @@
             this.BtnDisplay.Name = "BtnDisplay";
             this.BtnDisplay.Size = new System.Drawing.Size(161, 44);
             this.BtnDisplay.TabIndex = 3;
-            this.BtnDisplay.Text = "Display Animal";
+            this.BtnDisplay.Text = "Display Person";
             this.BtnDisplay.UseVisualStyleBackColor = true;
             this.BtnDisplay.Click += new System.EventHandler(this.BtnDisplay_Click);
             // 
@@ -92,7 +92,7 @@
             this.Controls.Add(this.BtnDisplay);
             this.Controls.Add(this.TxtAge);
             this.Controls.Add(this.TxtName);
-            this.Controls.Add(this.BtnAddAnimal);
+            this.Controls.Add(this.BtnAdd);
             this.Name = "FrmClass";
             this.Text = "Simple Class in C#";
             this.Load += new System.EventHandler(this.FrmClass_Load);
@@ -103,7 +103,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnAddAnimal;
+        private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.TextBox TxtAge;
         private System.Windows.Forms.Button BtnDisplay;
