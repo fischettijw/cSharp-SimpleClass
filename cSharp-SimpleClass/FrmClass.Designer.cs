@@ -33,6 +33,8 @@
             this.TxtAge = new System.Windows.Forms.TextBox();
             this.BtnDisplay = new System.Windows.Forms.Button();
             this.LbxDisplay = new System.Windows.Forms.ListBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnAdd
@@ -83,11 +85,33 @@
             this.LbxDisplay.Size = new System.Drawing.Size(370, 196);
             this.LbxDisplay.TabIndex = 4;
             // 
+            // lblName
+            // 
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(256, 20);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(153, 38);
+            this.lblName.TabIndex = 5;
+            this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblAge
+            // 
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(473, 20);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(153, 38);
+            this.lblAge.TabIndex = 6;
+            this.lblAge.Text = "Age";
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.LbxDisplay);
             this.Controls.Add(this.BtnDisplay);
             this.Controls.Add(this.TxtAge);
@@ -108,6 +132,8 @@
         private System.Windows.Forms.TextBox TxtAge;
         private System.Windows.Forms.Button BtnDisplay;
         private System.Windows.Forms.ListBox LbxDisplay;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblAge;
     }
 }
 

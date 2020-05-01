@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
+
 
 namespace cSharp_SimpleClass
 {
     public partial class FrmClass : Form
     {
-        Person[] animals = new Person[5];
+        Person[] animals = new Person[1];
         int numOfAnimals;
         public FrmClass()
         {
@@ -31,7 +31,8 @@ namespace cSharp_SimpleClass
             numOfAnimals += 1;
             TxtName.Text = "";
             TxtAge.Text = "";
-            BtnDisplay.PerformClick();        
+            BtnDisplay.PerformClick();
+            Array.Resize(ref animals, numOfAnimals + 1);
         }
 
         private void BtnDisplay_Click(object sender, EventArgs e)
